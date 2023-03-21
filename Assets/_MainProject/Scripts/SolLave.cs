@@ -27,7 +27,6 @@ public class SolLave : MonoBehaviour
         {
             unPlayer.ResetPlayerPosition();
             ResetPositionSol();
-            Debug.Log("touché");
 
         }
         
