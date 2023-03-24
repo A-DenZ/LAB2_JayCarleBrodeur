@@ -16,13 +16,14 @@ public class Player : MonoBehaviour
 
     private bool onGround = true;
 
+    private GestionFin thisfin; 
     private bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
     {
         gameObject.GetComponent<Animator>().enabled = false;
-        this.transform.position = new Vector3(-43.5f, 3.14f, -45.87f);
+        this.transform.position = new Vector3(0.953000009f, 0.69f, -52.4300003f);
         jump = new Vector3(0.0f, 4.0f, 0.0f);
         _rb = GetComponent<Rigidbody>();
     }
