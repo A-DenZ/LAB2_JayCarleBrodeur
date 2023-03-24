@@ -19,7 +19,7 @@ public class ZonePiege : MonoBehaviour
     private void Start()
     {
         //_rb = _piege.GetComponent<Rigidbody>();
-        //_rb.useGravity = false; 
+        //_rb.useGravity = false;
         foreach (var piege in _listePieges)
         {
             _listeRb.Add(piege.GetComponent<Rigidbody>());

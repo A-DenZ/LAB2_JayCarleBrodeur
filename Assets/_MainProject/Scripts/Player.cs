@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         gameObject.GetComponent<Animator>().enabled = false;
-        this.transform.position = new Vector3(0.953000009f, 0.69f, -52.4300003f);
+        //this.transform.position = new Vector3(0.953000009f, 0.69f, -52.4300003f);
         jump = new Vector3(0.0f, 4.0f, 0.0f);
         _rb = GetComponent<Rigidbody>();
     }
