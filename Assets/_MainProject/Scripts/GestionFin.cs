@@ -7,16 +7,18 @@ public class GestionFin : MonoBehaviour
 {
     private GameManager _gameManager;
     private Player _player;
+    int indexScene = SceneManager.GetActiveScene().buildIndex;
     // Start is called before the first frame update
     void Start()
     {
         _gameManager = FindObjectOfType<GameManager>();
         _player = FindObjectOfType<Player>();
+        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        int indexScene = SceneManager.GetActiveScene().buildIndex;
+        //int indexScene = SceneManager.GetActiveScene().buildIndex;
         if(indexScene == 0)
         {
             if (collision.gameObject.tag == "Player")
@@ -34,5 +36,11 @@ public class GestionFin : MonoBehaviour
         {
             SceneManager.LoadScene(indexScene+1);
         }
+    }
+
+
+    public int GetSceneManager()
+    {
+        return indexScene;
     }
 }

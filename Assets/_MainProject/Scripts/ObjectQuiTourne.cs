@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectQuiTourne : MonoBehaviour
 {
+    [SerializeField] private float _vitesseRotationX = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class ObjectQuiTourne : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(_vitesseRotationX,0f , 0f);
     }
 }
