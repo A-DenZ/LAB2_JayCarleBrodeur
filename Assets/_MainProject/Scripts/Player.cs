@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     private void FixedUpdate()
     {
         this.transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * _vitesse * Time.fixedDeltaTime);
